@@ -5,7 +5,7 @@ import { faThumbsUp, faThumbsDown, faImage, faMoneyCheckAlt, faSearchDollar } fr
 
 function App() {
   
-  const [isLoading, setIsLoading] = useState()
+  const [isLoading, setIsLoading] = useState(false)
   const [invoices, setInvoices] = useState([
 	{
 		id: '100',
@@ -15,21 +15,21 @@ function App() {
 		Date: '08/21/2020',
 	},
 	{
-		id: '100',
+		id: '200',
 		Vendor: 'Hankook',
 		Amount: '18,000',
 		Invoice: '1123',
 		Date: '08/21/2020',
 	},
 	{
-		id: '100',
+		id: '300',
 		Vendor: 'Hankook',
 		Amount: '18,000',
 		Invoice: '1123',
 		Date: '08/21/2020',
 	},
 	{
-		id: '100',
+		id: '400',
 		Vendor: 'Hankook',
 		Amount: '18,000',
 		Invoice: '1123',
@@ -41,11 +41,11 @@ function App() {
     return (<div>Loading...</div>)
 
   const remove = (id) => {
-    const updatedInvoices = invoices.filter((i) => id !== i.id )
+    const updatedInvoices = [...invoices].filter((i) => id !== i.id )
     setInvoices(updatedInvoices)
   }
 
-  invoices.map((invoice) => {
+  let allInvoices = invoices.map((invoice) => {
     return (
 			<tr key={invoice.id}>
 				<td>{invoice.Vendor}</td>
@@ -55,7 +55,7 @@ function App() {
 				<td>
 					<Button
 						className='btn btn-lg btn-success'
-						onClick={() => remove(invoices.id)}>
+						onClick={() => remove(invoice.id)}>
 						<FontAwesomeIcon icon={faThumbsUp} />
 						OK
 					</Button>
@@ -63,7 +63,7 @@ function App() {
 				<td>
 					<Button
 						className='btn btn-lg btn-danger'
-						onClick={() => remove(invoices.id)}>
+						onClick={() => remove(invoice.id)}>
 						<FontAwesomeIcon icon={faThumbsDown} />
 						NOT OK
 					</Button>
@@ -71,7 +71,7 @@ function App() {
 				<td>
 					<Button
 						className='btn btn-lg btn-info'
-						onClick={() => remove(invoices.id)}>
+						onClick={() => remove(invoice.id)}>
 						<FontAwesomeIcon icon={faMoneyCheckAlt} />
 						50%
 					</Button>
@@ -79,7 +79,7 @@ function App() {
 				<td>
 					<Button
 						className='btn btn-lg btn-warning'
-						onClick={() => remove(invoices.id)}>
+						onClick={() => remove(invoice.id)}>
 						<FontAwesomeIcon icon={faSearchDollar} />
 						??
 					</Button>
@@ -87,7 +87,7 @@ function App() {
 				<td>
 					<Button
 						className='btn btn-lg btn-info'
-						onClick={() => remove(invoices.id)}>
+						onClick={() => remove(invoice.id)}>
 						<FontAwesomeIcon icon={faImage} />
 						Image
 					</Button>
@@ -99,9 +99,8 @@ function App() {
 
   return (
 		<div className='container border border-secondary rouded center'>
-			
 			<div className='row'>
-				<div className='col-12'>			
+				<div className='col-12'>
 					<h4>Pending invoices - The Test Company</h4>
 				</div>
 			</div>
@@ -110,17 +109,27 @@ function App() {
 				<div className='.col-xs-12 center text-center'>
 					<Table dark responsive striped bordered hover>
 						<thead>
-							<th>Vendor</th>
-							<th>Amount</th>
-							<th>Invoice #</th>
-							<th>Date</th>
-							<th colSpan="4">Actions</th>
-							<th>Image</th>
+							<tr>
+								<th>Vendor</th>
+								<th>Amount</th>
+								<th>Invoice #</th>
+								<th>Date</th>
+								<th colSpan='4'>Actions</th>
+								<th>Image</th>
+							</tr>
 						</thead>
+						<tbody>
+							{invoices.length === 0 ? (
+								<tr>
+									<td colSpan='4'>All caught up!</td>
+								</tr>
+							) : (
+								allInvoices
+							)}
+						</tbody>
 					</Table>
 				</div>
 			</div>
-
 		</div>
 	);
 
