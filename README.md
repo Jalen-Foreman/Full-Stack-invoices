@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Full-Stack-invoices
 A serverless app that utilizes React.js for the frontend, hosting invoice data. The React.js application is then publically hosted on AWS S3. The data for the invoices comes from DynamoDB database. I use API Gateway and AWS Lambda to create a lambda function that retrieves the data from DynamoDB which then gets hosted utilizing API Gateway. I fetch the data from API Gateway and connect the data from DynamoDB to the state within the React.js application. 
 
@@ -26,6 +27,8 @@ http://project-invoices-aws.s3-website.us-east-2.amazonaws.com/
 
 ### `npm start`
 =======
+=======
+>>>>>>> Initial commit
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -107,4 +110,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
 >>>>>>> Initialize project using Create React App
+=======
+=======
+# Full-Stack-invoices
+>>>>>>> Initial commit
+>>>>>>> Initial commit
