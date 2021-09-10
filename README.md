@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Full-Stack-invoices
 A serverless app that utilizes React.js for the frontend, hosting invoice data. The React.js application is then publically hosted on AWS S3. The data for the invoices comes from DynamoDB database. I use API Gateway and AWS Lambda to create a lambda function that retrieves the data from DynamoDB which then gets hosted utilizing API Gateway. I fetch the data from API Gateway and connect the data from DynamoDB to the state within the React.js application. 
 
@@ -29,6 +30,8 @@ http://project-invoices-aws.s3-website.us-east-2.amazonaws.com/
 =======
 =======
 >>>>>>> Initial commit
+=======
+>>>>>>> Update README.md
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -38,7 +41,37 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### `yarn start`
+<<<<<<< HEAD
 >>>>>>> Initialize project using Create React App
+=======
+=======
+# Full-Stack-invoices
+A serverless app that utilizes many popular, sufficient frameworks and services to collect and restore data from invoices.
+
+
+# Technologies Used
+
+- React.js
+- Node.js
+- AWS API Gateway
+- AWS S3
+- AWS DynamoDB
+- AWS Lambda
+
+## Wireframe
+
+<img width="1318" alt="Screen Shot 2021-09-09 at 9 38 46 PM" src="https://user-images.githubusercontent.com/78430591/132784932-8b034966-a7a2-41c3-9012-86a3df81c7ab.png">
+
+### Development
+
+- VS Code
+- Google Chrome + Developer Tools
+
+# Getting Started/Installation Instructions
+
+### `npm start`
+>>>>>>> Update README.md
+>>>>>>> Update README.md
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -47,19 +80,33 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm test`
 =======
 ### `yarn test`
 >>>>>>> Initialize project using Create React App
+=======
+### `yarn test`
+=======
+### `npm test`
+>>>>>>> Update README.md
+>>>>>>> Update README.md
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### `npm run build`
 =======
 ### `yarn build`
 >>>>>>> Initialize project using Create React App
+=======
+### `yarn build`
+=======
+### `npm run build`
+>>>>>>> Update README.md
+>>>>>>> Update README.md
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -67,7 +114,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> Update README.md
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -116,4 +166,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # Full-Stack-invoices
 >>>>>>> Initial commit
+<<<<<<< HEAD
 >>>>>>> Initial commit
+=======
+=======
+>>>>>>> Update README.md
+>>>>>>> Update README.md
