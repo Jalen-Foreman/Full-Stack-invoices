@@ -46,7 +46,7 @@ In the project directory, you can run:
 =======
 =======
 # Full-Stack-invoices
-A serverless app that utilizes many popular, sufficient frameworks and services to collect and restore data from invoices.
+A serverless app that utilizes React.js for the frontend, hosting invoice data. The React.js application is then publically hosted on AWS S3. The data for the invoices comes from DynamoDB database. I use API Gateway and AWS Lambda to create a lambda function that retrieves the data from DynamoDB which then gets hosted utilizing API Gateway. I fetch the data from API Gateway and connect the data from DynamoDB to the state within the React.js application. 
 
 
 # Technologies Used
