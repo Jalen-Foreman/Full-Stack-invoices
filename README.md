@@ -4,6 +4,9 @@ A serverless app that utilizes React.js for the frontend, hosting invoice data. 
 # Website hosting on AWS S3
 http://project-invoices-aws.s3-website.us-east-2.amazonaws.com/
 
+# Lambda Function
+<img width="658" alt="Screen Shot 2021-09-12 at 1 36 15 AM" src="https://user-images.githubusercontent.com/78430591/132973507-ae1ee76a-dd4b-4374-8517-6c71133b1d94.png">
+
 # Technologies Used
 
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
