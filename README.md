@@ -1,6 +1,8 @@
 # Full-Stack-invoices
 A serverless app that utilizes many popular, sufficient frameworks and services to collect and restore data from invoices.
 
+# Website hosting on AWS S3
+http://project-invoices-aws.s3-website.us-east-2.amazonaws.com/
 
 # Technologies Used
 
