@@ -4,12 +4,12 @@ A serverless app that utilizes many popular, sufficient frameworks and services 
 
 # Technologies Used
 
-- React.js
-- Node.js
-- AWS API Gateway
-- AWS S3
-- AWS DynamoDB
-- AWS Lambda
+- React.js  ![image]({https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB})
+- Node.js  ![image]({https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white})
+- AWS API Gateway ![image]({https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white})
+- AWS S3  ![image]({https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+- AWS DynamoDB  ![image]({https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white})
+- AWS Lambda  ![image]({https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white})
 
 ## Wireframe
 
